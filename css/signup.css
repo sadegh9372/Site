@@ -1,0 +1,72 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    font-family: 'Courier New';
+}
+.header {
+    background-color: rgba(5, 62, 116, 0.867);
+    color: white;
+    text-align: center;
+    font-family: 'Courier New';
+    font-size: 25px;
+}
+.header p{
+    padding-top: 35px;
+}
+.signup-form input{
+    display: block;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.join button {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.join button:active {
+    background-color: rgba(5, 62, 116, 0.867);
+    color: white;
+    scale: 1.1;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    text-align: right;
+}
+.Contact {
+    padding:30px;
+    background-color: rgba(5, 62, 116, 0.867);
+    color: white;
+    text-align: right;
+    font-family: 'Courier New';
+}
+.Contact a {
+    color: white;
+    text-decoration: none;
+}
+.Contact ul{
+    list-style: none;
+}
+.footer {
+    background-color: rgba(5, 62, 116, 0.867);
+    color: white;
+    text-align: right;
+    font-family: 'Courier New';
+    padding:30px;
+    
+}
+.all {
+    position: relative;
+    top: 240px;
+}
+
+@media (max-width: 768px) {
+    .Contact{
+        text-align: center;
+    }
+    .footer {
+        text-align: center;
+    }
+}

@@ -1,0 +1,189 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.join {
+    background-color: rgba(5, 62, 116, 0.867);
+    color: white;
+    padding-right: 20px;
+    font-size: 17px;
+    font-family: 'Courier New';
+    text-align: right;
+}
+.join a {
+    line-height: 25px;
+    text-decoration: none;
+    color: white;
+}
+.join a:hover{
+    color: rgb(10, 10, 10, 0.8);
+}
+.navbar {
+    display: flex;
+    line-height: 25px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    background-color: rgba(5, 62, 116, 0.867);
+    font-family: 'Courier New';
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-size: 17px;
+}
+.navbar ul {
+    list-style: none;
+}
+.navbar a:hover {
+    color: rgb(10, 10, 10, 0.8);
+}
+
+.header {
+    background-color: rgba(5, 62, 116, 0.867);
+    color: white;
+    text-align: center;
+    font-family: 'Courier New';
+    font-size: 25px;
+}
+.header p{
+    padding-top: 30px;
+}
+hr {
+    padding: 7px;
+    background-image: linear-gradient(to right, rgb(158, 158, 158, 0.1), rgb(10, 10, 10, 0.4), rgb(158, 158, 158, 0.1));
+    border: none;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+.hero-text {
+    font-size: 45px;
+    font-family: 'Courier New';
+    color: rgb(10, 10, 10, 0.2);
+
+}
+.hero-text #center {
+    color: rgb(10, 10, 10, 0.6);
+}
+.hero h1:not(#center) {
+    line-height: 0.5;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+.card {
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2);
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+.container img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 7px;
+    
+}
+.card-text {
+    background-color: rgb(10, 10, 10, 0.8);
+    color: rgb(241, 238, 238);
+    text-align: center;
+    padding: 10px;
+    border-radius: 0px 0px 7px 7px;
+}
+.card:hover {
+    border: 0.8px solid rgba(0, 0, 0, 0.2);
+    scale: 1.0123;
+    cursor: pointer;
+}
+
+
+.Contact {
+    padding:30px;
+    background-color: rgba(5, 62, 116, 0.867);
+    color: white;
+    text-align: right;
+    font-family: 'Courier New';
+}
+.Contact a {
+    color: white;
+    text-decoration: none;
+}
+.Contact ul{
+    list-style: none;
+}
+.footer {
+    padding:30px;
+    background-color: rgba(5, 62, 116, 0.867);
+    color: white;
+    text-align: right;
+    font-family: 'Courier New';
+}
+.footer img {
+    margin-bottom: 10px;
+    transform: translate(0px, 5px);
+    width: 150px;
+    height: 150px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+    .join a {
+        line-height: 25px;
+    }
+    .hero {
+        flex-direction: column;
+    }
+    .hero-image {
+        width: 100%;
+        height: auto;
+    }
+    .hero-text h1:not(#center) {
+        display: none;
+    }
+    .hero-text #center {
+        font-size: 25px;
+        color: rgb(10, 10, 10, 0.8);
+           
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .navbar a {
+        line-height: 25px;
+    }
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Contact{
+        text-align: center;
+    }
+    .footer {
+        text-align: center;
+    }
+}
